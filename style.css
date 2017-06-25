@@ -1,4 +1,87 @@
-.card-placeholder {
-    background: #8b8;
-    width: 100px;
+body {
+    margin: 0;
 }
+* {
+    box-sizing: border-box;
+}
+
+.ui-sortable {
+    min-height: 80px;
+}
+
+.btn-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background-color: rgba(192, 57, 43,1.0);
+    color: white;
+}
+
+.board > .create-column {
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* BOARD */
+.board h1 {
+    text-align: center;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* COLUMN */
+.column {
+    min-width: 300px;
+    min-height: 20vh;
+    background-color: lightgreen;
+    margin-left: 8px;
+    padding: 20px;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+.column-add-card {
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 5px 8px;
+    display: block;
+}
+
+/* STYLE KARTY */
+.card {
+    box-sizing: border-box;
+    display: block;
+    height: 60px;
+    margin-bottom: 5px;
+    padding: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.card-list {
+    list-style: none;
+    margin: 5px;
+    padding: 0px;
+}
+.card-description {
+    margin: 2px 0;
+}
+.card-placeholder {
+    box-sizing: border-box;
+    display: block;
+    height: 60px;
+    margin-bottom: 5px;
+    border: 2px solid lightgrey;
+    background-color: lightblue;
+}
+
